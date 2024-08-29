@@ -30,3 +30,4 @@ books.png: books.ttl | validate $(RDF2DOT)
 	which dot || \
 	(sudo apt update && sudo apt -y install graphviz)
 	./$(RDF2DOT) $< | dot -Tpng > $@
+
